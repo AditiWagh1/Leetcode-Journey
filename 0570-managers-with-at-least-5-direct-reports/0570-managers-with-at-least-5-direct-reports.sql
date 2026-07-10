@@ -1,0 +1,2 @@
+# Write your MySQL query statement below
+select e1.name from Employee as e1 join (select managerId from Employee group by managerId having count(*)>=5) as e2 on e1.id=e2.managerId;
