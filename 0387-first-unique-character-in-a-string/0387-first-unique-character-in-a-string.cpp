@@ -20,3 +20,22 @@ public:
         return q.empty()?-1:q.front();
     }
 };//tc=O(n) and sc=O(n)
+
+//optimal approach TC=O(n) sc=O(1)
+// int firstUniqCharOptimal(string s) {
+//     int freq[26] = {0};
+
+//     // Pass 1: populate counts
+//     for (char ch : s) {
+//         freq[ch - 'a']++;
+//     }
+
+//     // Pass 2: first char with count == 1
+//     for (int i = 0; i < s.size(); i++) {
+//         if (freq[s[i] - 'a'] == 1) {
+//             return i;
+//         }
+//     }
+
+//     return -1;
+// }
